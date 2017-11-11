@@ -15,11 +15,13 @@ var Table = require('cli-table');
 // Renders unicode-aided tables on the command line from your node.js scripts.
 var chalk = require('chalk');
 // Terminal string styling done right.
+var figlet = require("figlet"); 
+// Implements the FIGfont spec in JavaScript.
 
 
 
 // =============== Database Credentials ============
-var connection = mysql.createConnection ({
+var connection = mysql.createConnection({
     user: 'root',
     password: '91zv4999',
     host: 'localhost',
@@ -29,7 +31,30 @@ var connection = mysql.createConnection ({
 
 
 // =================== Functions ==================
+displayItems();
 
+function displayItems(){
+    connection.query('SELECT * FROM products', function(err, results){
+        if (err){
+            throw err;
+        } else {
+            console.log("connected as id " + connection.threadId + "\n");
+            // console.log(results);
+            var table = new Table({
+                head:['ID', 'Product', 'Department', 'Price', 'Quantity'],
+            });
 
+            for (var i = 0; i < results.length; i++){
+                table.push([results[i].item_id, results[i].product_name, results[i].department_name, results[i].price, results[i].stock_quantity]);
+            }
+            console.log(chalk.bold.yellow(table.toString()));
+            quit();
+        }
+    })
+};
 
+function quit(){
+connection.end();
+process.exit();
+};
 
