@@ -55,6 +55,7 @@ function displayItems(){
                 table.push([results[i].item_id, results[i].product_name, results[i].department_name, results[i].price, results[i].stock_quantity]);
             }
             console.log(chalk.bold.yellow(table.toString()));
+            console.log("\n");
             promptUser(results);
         }
     })
@@ -104,7 +105,7 @@ function promptUser(results){
             function(err){
                 if (err) throw err;
                 var totalAmount = selectedUnits * selectedItem.price;
-                console.log("Your total is: $" + totalAmount);
+                console.log("Your total is: " + chalk.red("$" + totalAmount.toFixed(2)));
                 quit();
             }
         );
