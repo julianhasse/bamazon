@@ -105,12 +105,18 @@ function promptUser(results){
             function(err){
                 if (err) throw err;
                 var totalAmount = selectedUnits * selectedItem.price;
+                console.log(chalk.gray('-------------------------'));
                 console.log("Your total is: " + chalk.red("$" + totalAmount.toFixed(2)));
+                console.log(chalk.gray('-------------------------'));
+                console.log("\n");
                 quit();
             }
         );
         } else {
-            console.log("We are sorry. There are not enough of: \n" + chalk.red(selectedItem.product_name) + "\n" + "in stock to complete your order")
+            console.log(chalk.gray('----------------------------------------------------------------------'));
+            console.log("We are sorry.\nThe product: " + chalk.red(selectedItem.product_name) + " is currently out of stock.")
+            console.log(chalk.gray('----------------------------------------------------------------------'));
+            console.log("\n");
             quit();
         }
     });  
