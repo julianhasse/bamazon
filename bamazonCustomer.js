@@ -34,6 +34,13 @@ var connection = mysql.createConnection({
 displayItems();
 
 function displayItems(){
+
+    console.log(chalk.blue(figlet.textSync(" Bamazon ", {
+        font: 'Sub-zero',
+        horizontalLayout: 'fitted',
+        verticalLayout: 'fitted'
+    })));
+
     connection.query('SELECT * FROM products', function(err, results){
         if (err){
             throw err;
