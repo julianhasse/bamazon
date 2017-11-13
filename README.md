@@ -7,11 +7,11 @@
 ```
 
 ## bamazonCustomer.js
-* bamazon customer view opens onto the current catalog of items for sale
+* The bamazon customer starts by displaying all of items avaible for sale
 
 ![Image of cust1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
-* Select the items for purchase, and see your total. 
+* The user can select the items for purchase, and see the total amount. 
 
 ![Image of cust2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
 
