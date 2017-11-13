@@ -18,6 +18,7 @@
   "homepage": "https://github.com/julianhasse/bamazon#readme",
   "dependencies": {
     "chalk": "^2.3.0",
+    "clear": "0.0.1",
     "cli-table": "^0.3.1",
     "figlet": "^1.2.0",
     "inquirer": "^3.3.0",

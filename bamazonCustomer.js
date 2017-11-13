@@ -17,6 +17,7 @@ const chalk = require('chalk');
 // Terminal string styling done right.
 const figlet = require("figlet"); 
 // Implements the FIGfont spec in JavaScript.
+const clear = require('clear');
 
 
 
@@ -34,7 +35,7 @@ const connection = mysql.createConnection({
 displayItems();
 
 function displayItems(){
-
+    clear();
     console.log(chalk.blue(figlet.textSync(" Bamazon ", {
         font: 'Sub-zero',
         horizontalLayout: 'fitted',
@@ -52,7 +53,7 @@ function displayItems(){
             });
 
             for (var i = 0; i < results.length; i++){
-                table.push([results[i].item_id, results[i].product_name, results[i].department_name, results[i].price, results[i].stock_quantity]);
+                table.push([results[i].item_id, results[i].product_name, results[i].department_name, "$ " + results[i].price, results[i].stock_quantity]);
             }
             console.log(chalk.bold.yellow(table.toString()));
             console.log("\n");
@@ -64,7 +65,7 @@ function displayItems(){
 function promptUser(results){
     inquirer.prompt([{
             type: "input",
-            message: "Please enter the product ID of the item you would like to purchase\n",
+            message: "Please enter the product ID of the item you would like to purchase:\n",
             name: "productId",
             validate: function(value) {
                 if (isNaN(value) === false){
@@ -75,7 +76,7 @@ function promptUser(results){
         },
         {
             type: "input",
-            message: "Please enter how many units you would like to purchase\n",
+            message: "Please enter how many units you would like to purchase:\n",
             name: "productUnits",
             validate: function(value) {
                 if (isNaN(value) === false){
@@ -106,25 +107,45 @@ function promptUser(results){
                 if (err) throw err;
                 var totalAmount = selectedUnits * selectedItem.price;
                 console.log(chalk.gray('-------------------------'));
-                console.log("Your total is: " + chalk.red("$" + totalAmount.toFixed(2)));
+                console.log("Your total is: " + chalk.red("$ " + totalAmount.toFixed(2)));
                 console.log(chalk.gray('-------------------------'));
                 console.log("\n");
-                quit();
+                menu();
             }
         );
         } else {
             console.log(chalk.gray('----------------------------------------------------------------------'));
-            console.log("We are sorry.\nThe product: " + chalk.red(selectedItem.product_name) + " is currently out of stock.")
+            console.log("We are sorry.\nWe don't have enough: " + chalk.red(selectedItem.product_name) + " to fulfill your order.")
             console.log(chalk.gray('----------------------------------------------------------------------'));
             console.log("\n");
-            quit();
+            menu();
         }
     });  
 }
 
+function menu(){
+    inquirer.prompt([{
+        type: "list",
+        message: "Select an option\n",
+        name: "option",
+        choices: ["Continue shopping", "Quit"]
+
+    }]).then(function(res){
+        switch (res.option){
+            case "Continue shopping":
+            displayItems();
+            break;
+            case "Quit":
+            quit();
+            break;   
+        
+        }
+    });
+}; 
 
 function quit(){
-connection.end();
-process.exit();
+    console.log("\n\n");
+    connection.end();
+    process.exit();
 };
 
