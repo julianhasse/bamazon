@@ -15,7 +15,7 @@
 
 ![Image of cust2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
 
-* Should the user request more units than there are in stock, there will be a **warning** and a prompt to try again. 
+* We validate the quantity making sure there are enough items to complete the order. 
 
 ![Image of cust3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
