@@ -10,7 +10,7 @@
 ```
 
 ## Section 1: bamazonCustomer.js
-* Display all items available for sale.
+* System displays all items available for sale.
 
 ![Image of bamazonCustomer 1 ](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
@@ -18,7 +18,7 @@
 
 ![Image of bamazonCustomer 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
 
-* Validating the quantity, making sure there are enough items to complete the order. 
+* System validates the quantity, making sure there are enough items to complete the order. 
 
 ![Image of bamazonCustomer 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
@@ -29,7 +29,7 @@
 ![Image of bamazonManager 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
 
 #### View Products for Sale
-* Display all items available for sale.
+* System displays all items available for sale.
 
 ![Image of bamazonManager 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
 
@@ -39,18 +39,23 @@
 ![Image of bamazonManager 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
 
 #### Add to Inventory
-* Allows the user to select from the products to add inventory. 
+* User selects from the product list to add inventory. 
 
-![Image of man3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
+![Image of Inventory 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
 
-![Image of man4](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
+* User selects amount of units to add. 
+
+![Image of Inventory 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
+
+* System displays product selected, quantity entered and receives a list of updated catalog . 
+
+![Image of Inventory 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
 
 #### Add New Product
-* Add a new item to the shop database!
+* Add a new product to the database
 
-![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
+![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
 
 #### Exit app
 
-![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
-
+![Image of Exit](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
