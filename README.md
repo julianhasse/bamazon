@@ -1,6 +1,8 @@
-# Bamazon 
+# *Bamazon* 
 >### The ***Command Line Interface*** Amazon made with Node + mySQL
 >#### Author: Julian Hasse
+>#### Date: November/2017
+>#### License: MIT
 
 ## install
 ```
