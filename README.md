@@ -26,31 +26,31 @@
 ## Section2: bamazonManager.js
 * Manager inquires user to select an option. 
 
-![Image of man1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
+![Image of bamazonManager 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
 
 #### View Products for Sale
 * Opens a view of the current catalog. 
 
-![Image of man1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
+![Image of bamazonManager 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
 
 #### View Low Inventory
 * Displays all items with stock less than 5 in stock. 
 
-![Image of man2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
+![Image of bamazonManager 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
 
 #### Add to Inventory
 * Allows the user to select from the products to add inventory. 
 
-![Image of man3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
+![Image of man3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
 
-![Image of man4](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
+![Image of man4](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
 
 #### Add New Product
 * Add a new item to the shop database!
 
-![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
+![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
 
 #### Exit app
 
-![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
+![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
 
