@@ -12,15 +12,15 @@
 ## Section 1: bamazonCustomer.js
 * Displaying all items available for sale
 
-!(https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
+![Image of bamazonCustomer 1 ](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
 * The user can select the items for purchase and see the total amount. 
 
-![Image of cust2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
+![Image of bamazonCustomer 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
 
 * Validating the quantity, making sure there are enough items to complete the order. 
 
-![Image of cust3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
+![Image of bamazonCustomer 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
 
 ## Section2: bamazonManager.js
