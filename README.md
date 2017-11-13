@@ -1,12 +1,12 @@
 # Bamazon 
->### The Command Line Interface *Amazon* made with Node + mySQL
+>### The ***Command Line Interface*** Amazon made with Node + mySQL
 
 ## install
 ```
 ### Clone to your desktop and install all npm packages, then type: 'node bamazonCustomers.js'.
 ```
 
-## bamazonCustomer.js
+## Section 1: bamazonCustomer.js
 * The bamazon customer starts by displaying all of items avaible for sale
 
 ![Image of cust1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
@@ -20,7 +20,7 @@
 ![Image of cust3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
 
-## bamazonManager.js
+## Section2: bamazonManager.js
 * bamazon manager view opens to an inquire list to select a task. 
 
 #### View Products for Sale
@@ -45,7 +45,7 @@
 
 ![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
 
-#### Good Bye!!
+#### Exit app
 
 ![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
 
