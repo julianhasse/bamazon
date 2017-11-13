@@ -10,15 +10,15 @@
 ```
 
 ## Section 1: bamazonCustomer.js
-* The bamazon customer starts by displaying all of items avaible for sale
+* Displaying all items available for sale
 
 ![Image of cust1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
-* The user can select the items for purchase, and see the total amount. 
+* The user can select the items for purchase and see the total amount. 
 
 ![Image of cust2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img002.png)
 
-* We validate the quantity making sure there are enough items to complete the order. 
+* Validating the quantity, making sure there are enough items to complete the order. 
 
 ![Image of cust3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
