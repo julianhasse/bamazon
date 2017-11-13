@@ -23,7 +23,7 @@
 ![Image of bamazonCustomer 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
 
-## Section2: bamazonManager.js
+## Section 2: bamazonManager.js
 * Manager inquires user to select an option. 
 
 ![Image of bamazonManager 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
@@ -52,10 +52,11 @@
 ![Image of Inventory 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
 
 #### Add New Product
-* Add a new product to the database
+* User adds a new product to the database
 
 ![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
 
-#### Exit app
+## Section 3: bamazonExecutive.js
+* Text. 
 
-![Image of Exit](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
+![Image of bamazonExecutive 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
