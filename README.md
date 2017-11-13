@@ -12,7 +12,7 @@
 ## Section 1: bamazonCustomer.js
 * Displaying all items available for sale
 
-![Image of cust1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
+!(https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
 * The user can select the items for purchase and see the total amount. 
 
@@ -25,6 +25,8 @@
 
 ## Section2: bamazonManager.js
 * Manager inquires user to select an option. 
+
+![Image of man1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
 
 #### View Products for Sale
 * Opens a view of the current catalog. 
