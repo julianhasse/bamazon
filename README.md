@@ -34,21 +34,21 @@
 #### View Low Inventory
 * Displays all items with stock less than 5 in stock. 
 
-![Image of man2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
+![Image of man2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
 
 #### Add to Inventory
 * Allows the user to select from the products to add inventory. 
 
-![Image of man3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
+![Image of man3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
 
-![Image of man4](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
+![Image of man4](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
 
 #### Add New Product
 * Add a new item to the shop database!
 
-![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img007.png)
+![Image of man5](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
 
 #### Exit app
 
-![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
+![Image of man6](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
 
