@@ -24,7 +24,7 @@
 
 
 ## Section2: bamazonManager.js
-* bamazon manager view opens to an inquire list to select a task. 
+* Manager inquires user to select an option. 
 
 #### View Products for Sale
 * Opens a view of the current catalog. 
