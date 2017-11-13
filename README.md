@@ -10,7 +10,7 @@
 ```
 
 ## Section 1: bamazonCustomer.js
-* Displaying all items available for sale
+* Display all items available for sale.
 
 ![Image of bamazonCustomer 1 ](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
 
@@ -29,12 +29,12 @@
 ![Image of bamazonManager 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
 
 #### View Products for Sale
-* Opens a view of the current catalog. 
+* Display all items available for sale.
 
 ![Image of bamazonManager 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img005.png)
 
 #### View Low Inventory
-* Displays all items with stock less than 5 in stock. 
+* Display items with less than 5 units in stock. 
 
 ![Image of bamazonManager 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img006.png)
 
