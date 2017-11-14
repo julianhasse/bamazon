@@ -6,9 +6,8 @@
 >#### Version 1.0.2
 
 ## Install
-```
+
 ### Clone to your desktop and install all npm packages, then type: 'node bamazonCustomers.js' and press <kbd>Enter</kbd>.
-```
 
 ## Section 1: [bamazonCustomer.js]
 * System displays all items available for sale.
