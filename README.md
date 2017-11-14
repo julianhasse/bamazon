@@ -54,7 +54,7 @@ Clone to your desktop and install all npm packages, then type: 'node bamazonCust
 #### Add New Product
 * User adds a new product to the database
 
-![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
+![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
 
 ## Section 3: [bamazonExecutive.js]
 * Text. 
