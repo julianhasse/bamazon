@@ -47,7 +47,7 @@ Clone to your desktop and install all npm packages, then type: 'node bamazonCust
 
 ![Image of Inventory 2](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img008.png)
 
-* System displays product selected, quantity entered and receives a list of updated catalog . 
+* System displays product selected, quantity entered and receives a list of updated catalog.
 
 ![Image of Inventory 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img009.png)
 
@@ -57,6 +57,14 @@ Clone to your desktop and install all npm packages, then type: 'node bamazonCust
 ![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
 
 ## Section 3: [bamazonSupervisor.js]
-* Text. 
+* Supervisor interface offer two options: Display product's sales by department or add new department.
 
 ![Image of bamazonSupervisor 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img012.png)
+
+* Showing product's sales by department.
+
+![Image of bamazonSupervisor 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img013.png)
+
+* Adding a new department.
+
+![Image of bamazonSupervisor 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img014.png)
