@@ -56,7 +56,7 @@ Clone to your desktop and install all npm packages, then type: 'node bamazonCust
 
 ![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
 
-## Section 3: [bamazonExecutive.js]
+## Section 3: [bamazonSupervisor.js]
 * Text. 
 
-![Image of bamazonExecutive 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img012.png)
+![Image of bamazonSupervisor 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img012.png)
