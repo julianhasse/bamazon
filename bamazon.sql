@@ -56,4 +56,27 @@ VALUES		("Fender Guitar Strap", "music_gear", 24.50, 24),
 
 
 SELECT * FROM products;
+
+
+-- create table departments //////////////////////////////
+
+USE bamazon;
+
+CREATE TABLE departments (
+	department_id INT NOT NULL AUTO_INCREMENT,
+	department_name VARCHAR(100) NULL,
+	over_head_costs DECIMAL(10,2) NULL,
+    total_sales DECIMAL(10,2) NULL,
+	PRIMARY KEY(department_id)
+);
+
+
+INSERT INTO departments (department_name, over_head_costs)
+VALUES 		("music_books", 500),
+			("music_software", 300),
+			("music_records", 600),
+            ("audio_equiptment", 800),
+            ("video_equipment", 700),
+            ("computers_equipment", 1200);
             
+SELECT * FROM departments;
