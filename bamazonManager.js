@@ -209,7 +209,9 @@ function  addNewProduct(){
             stock_quantity: response.stock_quantity
         }, function(err){
             if (err) throw err;
+            console.log("======================================================================");
             console.log("The product " + chalk.red(response.product_name) + " was added to the catalog.");
+            console.log("======================================================================\n");
             quit();
         }
     
