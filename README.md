@@ -1,15 +1,15 @@
 # *Bamazon* 
->### The Command-Line-Interface Amazon made with Node + mySQL
+>### Command-Line-Interface Amazon made with Node + mySQL
 >#### Author: Julian Hasse
 >#### Date: November/2017
 >#### License: MIT
 
-## install
+## Install
 ```
 ### Clone to your desktop and install all npm packages, then type: 'node bamazonCustomers.js'.
 ```
 
-## Section 1: bamazonCustomer.js
+## Section 1: [bamazonCustomer.js]
 * System displays all items available for sale.
 
 ![Image of bamazonCustomer 1 ](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img001.png)
@@ -23,7 +23,7 @@
 ![Image of bamazonCustomer 3](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img003.png)
 
 
-## Section 2: bamazonManager.js
+## Section 2: [bamazonManager.js]
 * Manager inquires user to select an option. 
 
 ![Image of bamazonManager 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img004.png)
@@ -56,7 +56,7 @@
 
 ![Image of New Product](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img010.png)
 
-## Section 3: bamazonExecutive.js
+## Section 3: [bamazonExecutive.js]
 * Text. 
 
 ![Image of bamazonExecutive 1](https://github.com/julianhasse/bamazon/blob/master/screen_shots/img011.png)
