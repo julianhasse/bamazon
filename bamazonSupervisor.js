@@ -29,6 +29,7 @@ const connection = mysql.createConnection({
 });
 
 
+menu();
 
 // =================== Functions ==================
 function menu(){
@@ -38,6 +39,9 @@ function menu(){
         horizontalLayout: 'fitted',
         verticalLayout: 'fitted'
     })));
+    console.log("\n================================================")
+    console.log(" Supervisor Interface - Bamazon 2017")
+    console.log("================================================\n")
 
     inquirer.prompt([{
         type: "list",
@@ -68,22 +72,57 @@ function menu(){
 
 function viewProductSaleDep(){
     clear();
-    connection.query('SELECT * FROM products', function(err, results){
+    connection.query('SELECT * FROM departments', function(err, results){
         if (err){
             throw err;
         } else {
-            console.log(chalk.yellow("\n///// Manager Interface - Products for Sale ///// \n"));
+            console.log(chalk.yellow("\n///// Supervisor Interface - Departments Reports ///// \n"));
            
             var table = new Table({
-                head:['ID', 'Product', 'Department', 'Price', 'Quantity'],
+                head:['ID', 'Department', 'Overhead Costs', 'Total Sales'],
             });
 
             for (var i = 0; i < results.length; i++){
-                table.push([results[i].item_id, results[i].product_name, results[i].department_name, "$ " + results[i].price, results[i].stock_quantity]);
+                table.push([results[i].department_id, results[i].department_name, results[i].over_head_costs, "$ " + results[i].total_sales]);
             }
             console.log(chalk.bold.yellow(table.toString()));
             console.log("\n");
             quit();
         }
     })
+};
+
+
+function createNewDepartment(){
+    clear();
+    inquirer.prompt([{
+        name: "newDepartment",
+        message: "Please enter the Department's name: "
+    } , {
+        name: "overheadCost",
+        message: "Please indicate the Department's overhead cost: "
+    }]).then(function(resp){
+        var inputDepartment = resp.newDepartment;
+        var inputOverhead = resp.overheadCost;
+        connection.query('INSERT INTO departments SET ?', {
+            department_name: inputDepartment,
+            over_head_costs: inputOverhead,
+            total_sales:  0
+        })
+        console.log("\n=======================================================================");
+        console.log("The new deparment " + chalk.red(inputDepartment) + " was added to the database.")
+        console.log("=======================================================================\n");
+        quit();
+    });
+        
+};
+
+
+
+function quit(){
+    console.log("\n================================================")
+    console.log(" Bamazon - All Rights Reserved 2017 - Good bye!")
+    console.log("================================================\n")
+    connection.end();
+    process.exit();
 };

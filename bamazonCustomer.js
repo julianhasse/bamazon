@@ -110,6 +110,33 @@ function promptUser(results){
                 console.log("Your total is: " + chalk.red("$ " + totalAmount.toFixed(2)));
                 console.log(chalk.gray('-------------------------'));
                 console.log("\n");
+
+                // start update ///////////////////////////////////////////////////////////
+
+                var totalCost = selectedItem.price * selectedUnits;
+                var selectedDepartment = selectedItem.department_name;
+                
+                connection.query('SELECT * FROM departments', function(err, departResults){
+                    if (err) {
+                        throw err;
+                    } else { 
+                        departResults.forEach(function(salesRes){
+                            
+                            connection.query('UPDATE departments SET ? WHERE ?', [{
+                                total_sales: totalCost,
+                            }, {
+                                department_name: selectedDepartment,
+                            }], function(err){
+                                if (err) {
+                                    throw err;
+                                };
+                            })
+                        });
+                    }
+                });
+                
+                // end update ////////////////////////////////////////////////////////////
+
                 menu();
             }
         );
