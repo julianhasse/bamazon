@@ -172,7 +172,54 @@ function addToInventory() {
     })
 }
 
-function  addNewProduct(){};
+function  addNewProduct(){
+    inquirer.prompt([{
+        name: "product_name",
+        type: "input",
+        message: "Please enter the product to be added: "
+    }, {
+        name: "department_name",
+        type: "input",
+        message: "Please enter the deparment for the product: "
+    }, {
+        name : "price",
+        type: "input",
+        message: "Please indicate the price of the product: ",
+        validate: function(value) {
+            if (!isNaN(value)){
+                return true;
+            }
+            return false;
+        }    
+    },{
+        name: "stock_quantity",
+        type: "input",
+        message: "Please indicate the quantity you would like to add: ",
+        validate: function(value) {
+            if (!isNaN(value)){
+                return true;
+            }
+            return false;
+        }
+    }]).then(function(response){
+        connection.query('INSERT INTO products SET ?', {
+            product_name: response.product_name,
+            department_name: response.department_name,
+            price: response.price,
+            stock_quantity: response.stock_quantity
+        }, function(err){
+            if (err) throw err;
+            console.log("The product " + chalk.red(response.product_name) + " was added to the catalog.");
+            quit();
+        }
+    
+    
+    )
+    })
+
+
+
+};
 
 function quit(){
     console.log("\n\n");
