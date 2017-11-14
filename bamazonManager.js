@@ -60,7 +60,12 @@ function menu(){
             addNewProduct();
             break;
             case "Quit":
-            quit();
+            clear();
+            console.log("\n================================================")
+            console.log(" Bamazon - All Rights Reserved 2017 - Good bye!")
+            console.log("================================================\n")
+            connection.end();
+            process.exit();
             break;   
         
         }
@@ -214,9 +219,7 @@ function  addNewProduct(){
             console.log("======================================================================\n");
             quit();
         }
-    
-    
-    )
+      )
     })
 
 
@@ -225,7 +228,36 @@ function  addNewProduct(){
 
 function quit(){
     console.log("\n\n");
-    connection.end();
-    process.exit();
+    inquirer.prompt([{
+        type: "list",
+        message: "Select an option\n",
+        name: "option",
+        choices: ["View Products for Sale", "View Low Inventory", "Add to Inventory", "Add New Product", "Quit"]
+
+    }]).then(function(res){
+        switch (res.option){
+            case "View Products for Sale":
+            viewProductsSale();
+            break;
+            case "View Low Inventory":
+            viewLowInventory();
+            break;
+            case "Add to Inventory":
+            addToInventory();
+            break;
+            case "Add New Product":
+            addNewProduct();
+            break;
+            case "Quit":
+            clear();
+            console.log("\n================================================")
+            console.log(" Bamazon - All Rights Reserved 2017 - Good bye!")
+            console.log("================================================\n")
+            connection.end();
+            process.exit();
+            break;   
+        }
+    });
 };
+
 
